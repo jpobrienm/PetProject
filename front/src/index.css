@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira sans', sans-serif;
+}
+
+.App{
+  width: 100%;
+  height: 100%;
+  min-height:  100vh;
+  position: relative;
+  background-color: #313131;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.camera{
+  position: relative;
+}
+
+.result{
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.Header{
+  width: 100%;
+  height: 50px;
+  background-color: rgb(77, 83, 83);
+  user-select: none;
+}
+
+.HeaderLogo{
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  float: left;
+}
+
+.MyTitle{
+  display: table-cell;
+  height: 75px;
+  padding: 10px;
+  font-size: x-large;
+  font-weight: bolder;
+  vertical-align: middle;
+  float: left;
+  color: rgb(194, 176, 77);
+  text-shadow: -3px 0 rgb(34, 32, 32), 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(77, 83, 83);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  display:grid;
+  width: 20%;
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  vertical-align: middle;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+.leftpane {
+  width: 35%;
+  height: 100%;
+  float: left;
+  padding-top: 5%;
+  padding-left: 3%;
+  border-collapse: collapse;
+}
+
+.middlepane {
+  display: block;
+  width: 45%;
+  height: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.rightpane {
+  width: 25%;
+  height: 100%;
+  position: relative;
+  padding-top: 5%;
+  padding-right: 3%;
+  float: right;
+  border-collapse: collapse;
+}
+
+.RecordButton {
+  width: 80%;
+  appearance: none;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.RecordButton:hover{
+  background-color: rgb(210, 57, 30);
+}
+
+.saveButton {
+  width: 80%;
+  appearance: none;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.saveButton:hover{
+  background-color: rgb(216, 184, 3);
+}
+
+.MyInput {
+  width: 80%;
+  appearance: none;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #313131;
+  border: 1px solid #6b6b6b;
+  color: beige;
+}
+
+
+.MySearch {
+  width: 80%;
+  appearance: none;
+  border-radius: 25px;
+  outline: none;
+  padding: 8px 16px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #313131;
+  border: 1px solid #6b6b6b;
+  color: beige;
+}
+
+.slidecontainer{
+  display: block;
+  width: 100%;
+  height: 50px;
+  appearance: none;
+  outline: none;
+  font-size: 20px;
+  border: 1px solid #6b6b6b;
+}
+
+.slider {
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+
+.results {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 16px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.results td, .results th {
+  border: 1px solid rgb(59, 28, 28);
+  padding-top: 15px;
+  padding: 8px;
+}
+
+.results tr:nth-child(even){background-color: #f2f2f2;}
+
+.results tr:hover {background-color: #ddd;}
+
+.results th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(194, 176, 77);
+  color: white;
+}
+
+video{
+  width: 80%;
+  padding-top: 3%;
+}
+
+table {
+  width: 100%;
+}
